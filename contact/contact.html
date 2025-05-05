@@ -18,6 +18,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="../principale/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="../contact/contact.php">
 </head>
 
 <body class="contact">
@@ -49,8 +50,54 @@
                                 <a class="nav-link" href="../principale/accessoires.html">Accessoires</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Nos Conseils</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Nos Produits
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../Nos produits/produitnoir.html"><img
+                                                src="../principale/tisathe/thes/noir/the-noir.svg" alt=""> &ensp;Thé
+                                            noir</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/vert/the-vert.svg" alt=""> &ensp;Thé
+                                            vert</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/blanc/the-blanc.svg" alt=""> &ensp;Thé
+                                            blanc</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/matcha/the-matcha.svg" alt=""> &ensp;Thé
+                                            matcha</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/fumer/the-fume.svg" alt=""> &ensp;Thé
+                                            Fumé</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/noir/the-noir.svg" alt=""> &ensp;Thé
+                                            Aromatisé</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/PuErh/the-pu-erh.svg" alt=""> &ensp;Thé
+                                            PuErh</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/Oolong/the-oollong.svg" alt="">
+                                            &ensp;Thé
+                                            Oolong</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Rooibos/Rooibos.svg" alt="">
+                                            &ensp;Tisane
+                                            Rooibos</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Thym/Thym.svg" alt=""> &ensp;Tisane
+                                            Thym</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Camomille/Camomille.svg" alt="">
+                                            &ensp;Tisane
+                                            Camomille</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Verveine/Vervene.svg" alt="">
+                                            &ensp;Tisane
+                                            Verveine</a></li>
+                                </ul>
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../contact/contact.html">Contact</a>
@@ -61,13 +108,11 @@
             </div>
         </div>
     </header>
-    <!-- Navbar Section Exit -->
 
-    <!-- banner Section start -->
     <section class="banner_section">
         <div class="container">
             <div class="banner-content">
-                <h1>Contactez-nous</h1>
+                <h1>Contact</h1>
             </div>
         </div>
     </section>
@@ -86,7 +131,7 @@
                 <div class="col-12 contact-form">
                     <div class="row">
                         <div class="col-lg-7 mb-5">
-                            <form class="row g-3">
+                            <form class="row g-3" method="$_POST">
                                 <div class="col-md-6 mb-4">
                                     <input type="text" name="nomCpmlet" class="form-control"
                                         placeholder="Votre nom et prénom" required="">
@@ -156,10 +201,10 @@
                 <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
                     <h5>Tout savoir sur le Tisane</h5>
                     <ul class="link-widget p-0">
-                        <li><a href="#">Camomille</a></li>
-                        <li><a href="#">Rooibos</a></li>
+                        <li><a href="../tisanes/Camomille.html">Camomille</a></li>
+                        <li><a href="../tisanes/Rooibos.html">Rooibos</a></li>
                         <li><a href="../tisanes/thym.html">Thym</a></li>
-                        <li><a href="#">Verveine</a></li>
+                        <li><a href="../tisanes/Verveine.html">Verveine</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">

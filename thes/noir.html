@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Noir </title>
+    <title>Thé Noir </title>
     <link rel="shortcut icon" href="../principale/images/logotitre2.png" type="image/x-icon" />
 
 
@@ -17,7 +17,8 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="../principale/style.css">
-    <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="../principale/responsive.css">
+
 </head>
 
 <body class="about">
@@ -49,8 +50,54 @@
                                 <a class="nav-link" href="../principale/accessoires.html">Accessoires</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Nos Conseils</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Nos Produits
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../Nos produits/produitnoir.html"><img
+                                                src="../principale/tisathe/thes/noir/the-noir.svg" alt=""> &ensp;Thé
+                                            noir</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/vert/the-vert.svg" alt=""> &ensp;Thé
+                                            vert</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/blanc/the-blanc.svg" alt=""> &ensp;Thé
+                                            blanc</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/matcha/the-matcha.svg" alt=""> &ensp;Thé
+                                            matcha</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/fumer/the-fume.svg" alt=""> &ensp;Thé
+                                            Fumé</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/noir/the-noir.svg" alt=""> &ensp;Thé
+                                            Aromatisé</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/PuErh/the-pu-erh.svg" alt=""> &ensp;Thé
+                                            PuErh</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/thes/Oolong/the-oollong.svg" alt="">
+                                            &ensp;Thé
+                                            Oolong</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Rooibos/Rooibos.svg" alt="">
+                                            &ensp;Tisane
+                                            Rooibos</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Thym/Thym.svg" alt=""> &ensp;Tisane
+                                            Thym</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Camomille/Camomille.svg" alt="">
+                                            &ensp;Tisane
+                                            Camomille</a></li>
+                                    <li><a class="dropdown-item" href="website.html"><img
+                                                src="../principale/tisathe/tisanes/Verveine/Vervene.svg" alt="">
+                                            &ensp;Tisane
+                                            Verveine</a></li>
+                                </ul>
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../contact/contact.html">Contact</a>
@@ -278,8 +325,6 @@
                 </div>
             </div>
     </section>
-
-
     <!-- Footer section -->
     <section class="footer_wrapper mt-3 mt-md-0">
         <div class="container px-5 px-lg-0">
@@ -328,6 +373,28 @@
             <p><a href="../principale/index.html">TAZZA</a></p>
         </div>
     </section>
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const arrow = item.querySelector('.arrow');
+            item.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+
+                // Fermer tous les autres
+                faqItems.forEach(i => {
+                    i.classList.remove('open');
+                    i.querySelector('.arrow').textContent = '▾';
+                });
+
+                // Ouvrir l'item cliqué
+                if (!isOpen) {
+                    item.classList.add('open');
+                    arrow.textContent = '▴';
+                }
+            });
+        });
+    </script>
     <!-- Footer Section Exit  -->
 
     <!-- Bootstrap 5 CDN -->

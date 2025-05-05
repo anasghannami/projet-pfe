@@ -260,7 +260,7 @@
            .header .navbar-nav .nav-link {
                color: var(--text-white);
                text-transform: uppercase;
-               font-size: 1.4rem;
+               font-size: 1.5rem;
                font-weight: 600;
                padding: 0.5rem 2rem;
                margin: 0 0.2rem;
@@ -473,6 +473,7 @@
 
            .landing_product_section .product-card {
                position: relative;
+               border-radius: 10px;
                overflow: hidden;
                cursor: pointer;
                border: transparent;
@@ -483,21 +484,24 @@
            }
 
            .landing_product_section .product-card .product-img {
-               margin-bottom: 7rem;
+               margin-bottom: 5rem;
                text-align: center;
            }
 
            .landing_product_section .product-card h3 {
                color: var(--primary-text);
+               font-weight: 600;
+               font-size: 3rem;
            }
 
            .landing_product_section .product-card span {
                font-size: 1.8rem;
                font-weight: 600;
-               text-transform: uppercase;
+               text-transform: lowercase;
                color: var(--secondary-color);
                margin-right: 0.5rem;
-               text-decoration: line-through;
+
+
                transition: all 0.3s;
 
            }
@@ -537,7 +541,7 @@
            }
 
            .testimonial_section .card {
-               background: url('../principale/images/testimonial/testimonial-bg.png');
+               background: url('../principale/images/testimonial-bg.png');
                background-size: cover;
                background-repeat: no-repeat;
                background-position: center center;
@@ -575,7 +579,7 @@
            /* Footer CSS */
 
            .footer_wrapper {
-               background: url('../principale/images/footer-bg/newfotter.png');
+               background: url('../principale/images/newfotter.png');
                background-repeat: no-repeat;
                background-size: cover;
                background-position: top center;
@@ -753,7 +757,7 @@
            }
 
 
-
+           /*responsive page*/
 
            /* Media Query 1170px */
            @media (max-width:1170px) {
@@ -852,4 +856,60 @@
                html {
                    font-size: 7px;
                }
+           }
+
+           /*fag*/
+
+           .header .dropdown-menu {
+               min-width: 17rem;
+               padding: 2.3rem 0;
+               background-color: #03262c;
+               border: 0.2rem solid var(--primary-color);
+               border-radius: 14px;
+
+
+           }
+
+           .header .dropdown-menu img {
+               height: 24px;
+               width: 24px;
+
+           }
+
+           .header .dropdown-item {
+               line-height: 1.3;
+               padding: 1rem;
+               font-size: 1.3rem;
+               color: #fff;
+               font-weight: 600;
+               font-family: var(--secondary-font);
+           }
+
+           .nav-item:hover>.dropdown-toggle::after,
+           .nav-link.dropdown-toggle.show {
+               color: var(--primary-color);
+           }
+
+           .dropdown-item:focus,
+           .dropdown-item:hover,
+           .header .navbar-nav .nav-link:hover {
+               color: #60cd12;
+               background-color: transparent;
+           }
+
+           .navbar-nav li:hover>ul.dropdown-menu {
+               display: block;
+           }
+
+           .header .navbar-toggler {
+               color: var(--white-color);
+               font-size: 2rem;
+               height: 2.7rem;
+               padding: 0;
+           }
+
+           .header .navbar-toggler:focus {
+               outline: none;
+               box-shadow: none;
+
            }
