@@ -913,3 +913,9 @@
                box-shadow: none;
 
            }
+
+           video {
+               width: 53%;
+               height: auto;
+               border-radius: 20px;
+           }
